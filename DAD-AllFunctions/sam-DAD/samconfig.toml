@@ -1,0 +1,11 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "sam-DAD-allFunctions"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-arnmnshoufyq"
+s3_prefix = "sam-DAD-allFunctions"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "DynamoDBTableName=\"DevelopmentArchitectureDemo\" ApiGatewayId=\"1nhrf85zn0\" ApiGatewayResourceId=\"2u8crs\" ApiGatewayAuthorizerId=\"uxbdqu\" AuthorizeListMethod=\"No\" AuthorizeRetrieveMethod=\"No\" AuthorizeCreateMethod=\"Yes\" AuthorizeUpdateMethod=\"Yes\" AuthorizeDeleteMethod=\"Yes\" SupportStackUrl=\"https://revibe-cf-templates.s3.amazonaws.com/SAM/Supplement/2020-10-28.yml\""
